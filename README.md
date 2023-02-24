@@ -1,4 +1,4 @@
-# Pokémon Sprit Scrape
+# Pokémon Sprite Scrape
 A small utility program I wrote to help download Pokémon sprites for my [Champs in the Making website](https://github.com/oneirocosm/champs-frontend).
 
 This small program uses asynchronous Rust to download multiple sprite files at a time.  It works by finding the names of various pokemon using [my database](https://github.com/oneirocosm/champs-db) and then combining them with a few common URLs to download the files from [PokémonDB](https://pokemondb.net/).  It is set up in such a way that it will attempt to find a [Scarlet / Violet](https://scarletviolet.pokemon.com/en-us/) sprite first.  If it can't find that, it will fall back to a [Brilliant Diamond / Shining Pearl](https://diamondpearl.pokemon.com/en-us/) sprite.  And if it can't find that, it will fall back to a [Pokémon Home](https://home.pokemon.com/en-us/) (used to be called Pokémon Bank) sprite.
